@@ -6,14 +6,14 @@
         כותרת : {{ report.title }}
       </mat-panel-title>
       <mat-panel-description class="mat-title">
-        {{ report.owner}}
+        מחבר : {{ report.owner}}
       </mat-panel-description>
       <mat-panel-description class="mat-title">
         {{ report.date}}
       </mat-panel-description>
       <mat-panel-description class="mat-title">
         <mat-chip-list>
-          <mat-chip *ngFor="let tag of report.tags" color="accent" selected>
+          <mat-chip *ngFor="let tag of report.tags">
             {{tag}}
           </mat-chip>
         </mat-chip-list>

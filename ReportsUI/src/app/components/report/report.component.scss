@@ -1,14 +1,14 @@
 .mat-expansion-panel, .mat-expansion-panel-header-title{
     //background: white;
-    background: rgb(153, 208, 230);
-    color: black;
-}
-.mat-expansion-panel-header-description {
-    color:rgb(95, 94, 94)
+    background: #00203FFF;
+    color: #ADEFD1FF;
 }
 .mat-card, .mat-card-subtitle {
-    background: rgb(160, 201, 255);
-    color: black;
+    background: #ADEFD1FF;
+    color: #00203FFF;
+}
+.mat-expansion-panel-header-description {
+    color:#ADEFD1FF
 }
 
 mat-list.list-horizontal {
@@ -17,4 +17,10 @@ mat-list.list-horizontal {
         height: auto;
         width: auto;
     }
+}
+
+.mat-chip, .mat-chip-selected {
+    background-color: #ADEFD1FF !important;
+    color:#00203FFF !important;
+
 }
