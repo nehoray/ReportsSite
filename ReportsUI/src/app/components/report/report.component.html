@@ -1,0 +1,34 @@
+<div dir="rtl" fxLayout="row" fxLayoutAlign="start center" >
+  <mat-expansion-panel hideToggle style='width: 100%;'>
+    <!-- HEADER -->
+    <mat-expansion-panel-header [collapsedHeight]="'100px'">
+      <mat-panel-title class="mat-headline" style='font-size: 40px;'>
+        כותרת : {{ report.title }}
+      </mat-panel-title>
+      <mat-panel-description class="mat-title" style='font-size: 30px;'>
+        מחבר : {{ report.owner}}
+      </mat-panel-description>
+      <mat-panel-description class="mat-title" style='font-size: 30px;'>
+        {{ report.date}}
+      </mat-panel-description>
+      <mat-panel-description class="mat-title" style='font-size: 27px;'>
+        <mat-chip-list>
+          <mat-chip *ngFor="let tag of report.tags" style="font-size: inherit;">
+            {{tag}}
+          </mat-chip>
+        </mat-chip-list>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <!-- BODY -->
+    <mat-card class="example-card">
+      <mat-card-content>
+        <p class="mat-display-1">
+        {{ report.data }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-action-row>
+      <button mat-button (click)='edit()'><mat-icon>edit</mat-icon></button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</div>

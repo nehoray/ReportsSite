@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { report } from 'src/app/components/report/report.component';
 
 @Component({
   selector: 'app-new-report-view',
@@ -11,5 +12,7 @@ export class NewReportViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  report: report = {data: 'hiii or hmele', owner: 'mio', date: new Date(), subTitle:'אחשליי', tags: ['nturkvc'], title:'nnnn'}
 
 }

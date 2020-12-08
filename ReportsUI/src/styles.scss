@@ -16,3 +16,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 ::-webkit-scrollbar-thumb {
     background-color: #8b8b8b;
 }
+p {
+    word-wrap: break-word;
+}
