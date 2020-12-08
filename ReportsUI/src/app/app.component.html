@@ -1,1 +1,31 @@
-<router-outlet></router-outlet>
+<div fxLayout="column" fxLayoutAlign="space-around stretch" class='menu' fxLayoutGap='50px'>
+  <!-- Toolbar -->
+  <div fxFlex='5'>
+    <app-tool-bar></app-tool-bar>
+  </div>
+  
+
+  <div fxFlex='95' class="content" role="main">
+    <app-reports-view></app-reports-view>
+    <div fxLayout="row" fxLayoutAlign="end center" style="width: 100%;">
+      <div style='width: 100%;position: absolute;margin-top: -24px;' fxFlex=13>
+        <button mat-fab class='btnPlusReport'>
+          <mat-icon class='iconAdd'>add</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div fxFlex='10'>
+    <div fxLayout="row" fxLayoutAlign="end center" style="width: 100%;">
+      <div style='width: 100%;' fxFlex=10>
+        <button mat-fab class='btnPlusReport'>
+          <mat-icon class='iconAdd'>add</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div> -->
+  <router-outlet></router-outlet>
+
+</div>
+

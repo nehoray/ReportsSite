@@ -1,1 +1,9 @@
-<p>reports-view works!</p>
+<div fxLayout="row" fxLayoutAlign="center start" style="width: 100%;" class='cards'>
+    <div fxLayout="column" fxLayoutAlign="start strech" class='cards' fxLayoutGap='12px' style="width: 80%;">
+        <ng-container fxFlex=10>
+            <ng-container *ngFor="let repo of data$ | async">
+                <app-report [report]='repo'></app-report>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>

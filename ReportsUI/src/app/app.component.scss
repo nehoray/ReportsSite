@@ -1,0 +1,26 @@
+* {
+    direction: rtl;
+  }
+
+.menu {
+    height: 100%;
+    background-color: rgb(211, 211, 211)
+    ;
+}
+
+.btnPlusReport {
+    color: white;
+    background-color: #97d697;
+    width: 100px;
+    height: 100px;
+}
+
+.iconAdd {
+    width: 100px;
+    font-size: 56px;
+    margin-top: -24px;
+}
+
+.content {
+    overflow-y: scroll;
+}
