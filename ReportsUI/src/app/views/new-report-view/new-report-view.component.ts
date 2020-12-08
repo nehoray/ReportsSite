@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { report } from 'src/app/components/report/report.component';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-new-report-view',
@@ -8,11 +9,12 @@ import { report } from 'src/app/components/report/report.component';
 })
 export class NewReportViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fireBase: AngularFirestore) { }
 
   ngOnInit(): void {
+    
   }
 
-  report: report = {data: 'hiii or hmele', owner: 'mio', date: new Date(), subTitle:'אחשליי', tags: ['nturkvc'], title:'nnnn'}
+  report: report = {data: 'hiii or hmele', owner: 'mio', date: new Date(), subTitle:'אחשליי', tags: ['nturkvc'], title:'nnnn'};
 
 }

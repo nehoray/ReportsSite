@@ -11,6 +11,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ReportComponent } from './components/report/report.component';
+import { environment } from "src/environments/environment";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { ReportComponent } from './components/report/report.component';
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },

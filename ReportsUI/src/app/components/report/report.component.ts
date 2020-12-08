@@ -1,10 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
+import firebase from 'firebase';
 
 export interface report {
   title?: string;
   data?: string;
   tags?: string[];
-  owner?: string;
+  owner?: string; 
   date?: Date;
   subTitle?: string;
 }
@@ -26,6 +27,7 @@ export class ReportComponent implements OnInit {
   }
 
   ngOnInit() {
+    
   }
 
   edit() {
