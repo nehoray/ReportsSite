@@ -1,31 +1,66 @@
-<div class="form" dir='rtl'>
-    <h1>יצירת תחקיר</h1>
-    <mat-form-field>
-        <mat-label>כותרת</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <br>
-    <mat-form-field>
-        <mat-label>תת כותרת</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <br>
-    <mat-form-field>
-        <mat-label>תאריך</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <br>
-    <mat-form-field>
-        <mat-label>בעלים</mat-label>
-        <input matInput>
-    </mat-form-field>
-    <br>
-    <mat-form-field>
-        <mat-label>מידע</mat-label>
-        <textarea matInput></textarea>
-    </mat-form-field>
-    <mat-form-field class="example-full-width">
-        <mat-label>Leave a comment</mat-label>
-        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-    </mat-form-field>
+<div fxLayout="column" fxLayoutAlign="space-between center">
+    <div style="width:60%" class="form" dir='rtl'>
+        <h1 class="main-title">יצירת תחקיר</h1>
+        <form [formGroup]="reportForm" (submit)="submit()">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <ng-container>הנדון:</ng-container>
+                <mat-form-field>
+                    <input formControlName="title" required matInput class="input">
+                </mat-form-field>
+            </div>
+            <p class="sub-title">
+                1.כללי:
+            </p>
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <ng-container>א.מיקום:</ng-container>
+                <mat-form-field class="filed">
+                    <input formControlName="location" required matInput class="input">
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <ng-container>ב.יחידה: </ng-container>
+                <mat-form-field class="filed">
+                    <input formControlName="unit" required matInput class="input">
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <ng-container>ג.תיאור כללי:</ng-container>
+                <mat-form-field class="filed">
+                    <textarea formControlName="desc" required matInput class="input">
+                </textarea>
+                </mat-form-field>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <ng-container> ד.משתתפים:</ng-container>
+                <mat-form-field class="filed">
+                    <textarea formControlName="participants" required matInput class="input">
+                    </textarea>
+                </mat-form-field>
+            </div>
+            <p class="sub-title">
+                2.ממצאים ומסקנות
+            </p>
+
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <ng-container>א.ממצאים:</ng-container>
+                <mat-form-field class="filed">
+                    <textarea formControlName="findings" required matInput class="input">
+                </textarea>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <ng-container>ב.מסקנות:</ng-container>
+                <mat-form-field class="filed">
+                    <textarea formControlName="conclusion" required matInput class="input">
+                </textarea>
+                </mat-form-field>
+            </div>
+            <div fxLayout="column">
+                <button mat-raised-button type="submit">שלח</button>
+            </div>
+        </form>
+    </div>
 </div>
