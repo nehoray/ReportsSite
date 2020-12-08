@@ -2,16 +2,16 @@
   <mat-expansion-panel hideToggle style='width: 100%;'>
     <!-- HEADER -->
     <mat-expansion-panel-header [collapsedHeight]="'100px'">
-      <mat-panel-title class="mat-headline" style='font-size: 40px;'>
+      <mat-panel-title class="mat-headline" style='font-size: 30px;'>
         כותרת : {{ report.title }}
       </mat-panel-title>
-      <mat-panel-description class="mat-title" style='font-size: 30px;'>
+      <mat-panel-description class="mat-title" style='font-size: 20px;'>
         מחבר : {{ report.owner}}
       </mat-panel-description>
-      <mat-panel-description class="mat-title" style='font-size: 30px;'>
+      <mat-panel-description class="mat-title" style='font-size: 20px;'>
         {{ report.date}}
       </mat-panel-description>
-      <mat-panel-description class="mat-title" style='font-size: 27px;'>
+      <mat-panel-description class="mat-title" style='font-size: 17px;'>
         <mat-chip-list>
           <mat-chip *ngFor="let tag of report.tags" style="font-size: inherit;">
             {{tag}}
