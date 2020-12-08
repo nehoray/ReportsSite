@@ -2,12 +2,19 @@
     //background: white;
     background: rgb(153, 208, 230);
     color: black;
-  }
-  .mat-expansion-panel-header-description {
-      color:rgb(95, 94, 94)
-  }
-  .mat-card, .mat-card-subtitle {
+}
+.mat-expansion-panel-header-description {
+    color:rgb(95, 94, 94)
+}
+.mat-card, .mat-card-subtitle {
     background: rgb(160, 201, 255);
     color: black;
-  }
+}
 
+mat-list.list-horizontal {
+    .mat-list-item {
+        display: inline-block;
+        height: auto;
+        width: auto;
+    }
+}

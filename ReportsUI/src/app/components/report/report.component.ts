@@ -16,10 +16,10 @@ export interface report {
 export class ReportComponent implements OnInit {
   @Input() report: report = { title: 'תחקיר בסיסי',
   owner:'אור פרידמן',
-  data: 'מאור הזה הוא חתיכת גבר אבל הוא חסם את כל הכרטיסי רשת בצהל והשבית אותנו ובגלל זה הפסדנו את המדינה',
-  date: new Date(),
+  data: 'מאור הזה הוא חתיכת גבר אבל הוא חסם את כל הכרטיסי רשת בצהל והשבית אותנו ובגלל זה הפסדנו את המדינההההההההההההההההההההההההההההההההההה שדגשדג',
+  date: new Date(new Date().getFullYear(),new Date().getMonth() , new Date().getDate()),
   subTitle: 'asd',
-  tags: ['a','b']
+  tags: ['epo','סייבר', 'MAMRAM']
   };
   constructor() { 
 
@@ -27,7 +27,7 @@ export class ReportComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   edit() {
     console.log('test')
   }
