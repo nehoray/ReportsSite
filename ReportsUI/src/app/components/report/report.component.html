@@ -9,7 +9,7 @@
         מחבר : {{ report.owner}}
       </mat-panel-description>
       <mat-panel-description class="mat-title" style='font-size: 20px;'>
-        {{ report.date}}
+        {{ report.date.toDate().toUTCString() }}
       </mat-panel-description>
       <mat-panel-description class="mat-title" style='font-size: 17px;'>
         <mat-chip-list>
