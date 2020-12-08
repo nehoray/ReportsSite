@@ -1,0 +1,22 @@
+<mat-expansion-panel hideToggle>
+  <!-- HEADER -->
+  <mat-expansion-panel-header>
+    <mat-panel-title class="mat-headline">
+      כותרת : {{ report.title }}
+    </mat-panel-title>
+    <mat-panel-description class="mat-title">
+      מחבר : {{ report.owner }}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <!-- BODY -->
+  <mat-card class="example-card">
+    <mat-card-content>
+      <p class="mat-display-1">
+      {{ report.data }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions dir="ltr">
+      <button mat-button (click)='edit()'><mat-icon>edit</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>
+</mat-expansion-panel>

@@ -7,13 +7,14 @@ import { ReportsViewComponent } from './views/reports-view/reports-view.componen
 import { NewReportViewComponent } from './views/new-report-view/new-report-view.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
-
+import { ReportComponent } from './components/report/report.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReportsViewComponent,
-    NewReportViewComponent
+    NewReportViewComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
